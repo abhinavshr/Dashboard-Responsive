@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.icon {
+    display: none;
+}
+
+body {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container2{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container2-1{
+    width: 70%;
+    margin: 0 auto;
+    margin-right: 26px;
+}
+
+.container2-2{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.subheading{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.general{
+    width: 80%;
+}
+
+.setbutton{
+    width: 13%;
+    margin: 0 auto;
+}
+
+.generalheading{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.buttomsetdata{
+    background-color: #EE36C5;
+    width: 193px;
+    height: 54px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;    
+}
+
+nav ul li:hover{
+    color: #EE36C5;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stat-item {
+    background: rgb(29,29,32);
+    background: linear-gradient(90deg, rgba(29,29,32,1) 35%, rgba(19,19,20,1) 83%);
+    padding: 20px;
+    width: 32%;
+    border-radius: 10px;
+    text-align: center;
+    border: #4A4A52 1px solid;
+}
+
+.stat-item h2 {
+    font-size: 28px;
+}
+
+.stat-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.green {
+    color: #3CCF4E;
+}
+
+.red {
+    color: #E14C4C;
+}
+
+.accumulation-cashback {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.accumulation{
+    width: 39%;
+}
+
+.cashback{
+    width: 59%;
+}
+
+.accumulation, .cashback {
+    background: rgb(29,29,32);
+    background: linear-gradient(90deg, rgba(29,29,32,1) 35%, rgba(19,19,20,1) 83%);
+    padding: 20px;
+    border-radius: 10px;
+    border: #4A4A52 1px solid;
+    
+}
+
+.accumulation h3, .cashback h3 {
+    margin-bottom: 15px;
+    width: 85%;
+}
+
+.accumulation-heading{
+    display: flex;
+    margin: 0 auto;
+}
+
+.accumulationviewall{
+    color: #EE36C5;
+}
+
+.accumulation-body{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.circle-chart {
+    width: 80px;
+    height: 80px;
+    background: conic-gradient(#3CCF4E 70%, #29292c 70%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-chart-info{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.circle-chart p {
+    color: #ffffff;
+}
+
+.cashback-body{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cashback-body-1{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cashback-body-2{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cashback-body-1-1, .cashback-body-1-2, .cashback-body-2-1, .cashback-body-2-2{
+    display: flex; 
+    align-items: center;
+    padding: 5px;
+}
+
+.cashback-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EE36C5;
+    border: #4A4A52 1px solid;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.transactions-creditcard {
+    background: rgb(29,29,32);
+    background: linear-gradient(90deg, rgba(29,29,32,1) 35%, rgba(19,19,20,1) 83%);
+    justify-content: flex-start; 
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: #4A4A52 1px solid;
+    margin-top: 50px;
+}
+
+.creditcard {
+    width: 100%;
+    background: linear-gradient(135deg, #8e44ad, #6c5ce7, #0984e3);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px; 
+}
+
+.design {
+    position: relative;
+    z-index: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-chip img {
+    width: 50px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.card-label {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-number {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.card-balance {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.card-date, .card-holder {
+    font-size: 16px;
+}
+
+.card-holder {
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.card-brand {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.transaction-section {
+    width: 55%; 
+}
+
+.transaction-section h3 {
+    color: white;
+}
+
+.transaction-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.transaction-item img.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.transaction-item span {
+    font-size: 19px;
+    color: #fff;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cashback-photo{
+    width: 30px;
+    height: 30px;
+}
+
+.sendbutton, .transferbutton, .morebutton{
+    width: 110.25px;
+    height: 112px;
+    border-radius: 50%;
+    margin: 17px;
+    background: rgb(29,29,32);
+    background: linear-gradient(90deg, rgba(29,29,32,1) 35%, rgba(19,19,20,1) 83%);
+}
+.sendbutton i, .transferbutton i, .morebutton i{
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+}
+
+.sendbutton p, .transferbutton p, .morebutton p{
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.cashback-button{
+    margin-left: 80px;
+}
+
+.cashback-button-1{
+    margin-left: 50px;
+}
+
+.cashback-button-2{
+    margin-left: 87px;
+}
+
+@media (max-width: 1024px) {
+    .container2 {
+        flex-direction: column; 
+    }
+
+    .container2-1,
+    .container2-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .stat-item {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .accumulation,
+    .cashback {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .statistics {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .accumulation-cashback{
+        display: block;
+    }
+
+    .accumulation,
+    .cashback {
+        width: 100%;
+    }
+
+    .generalheading {
+        font-size: 24px;
+    }
+
+    .buttomsetdata {
+        width: 100%;
+        height: 45px;
+    }
+
+    .circle-chart {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-balance {
+        font-size: 28px;
+    }
+
+    .sendbutton,
+    .transferbutton,
+    .morebutton {
+        width: 90px;
+        height: 90px;
+    }
+
+    .spending-analytics {
+        width: 100%;
+    }
+    .setbutton{
+        width: 100%;
+        margin-left: 100px;
+    }
+
+    .mylinks ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(29,29,32);
+        background: linear-gradient(90deg, rgba(29,29,32,1) 35%, rgba(19,19,20,1) 83%);
+    }
+
+    .mylinks ul li {
+        text-align: center;
+        border-bottom: 1px solid #4A4A52;
+    }
+
+    .mylinks ul li a {
+        padding: 15px;
+    }
+
+    .icon {
+        display: block;
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+    .header.active .mylinks ul {
+        display: flex;
+    }
+
+    .cashback-body{
+        display: block;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+
+    .cashback-button {
+        margin-left: 20px;
+    }
+
+    .buttomsetdata {
+        background-color: #EE36C5;
+        width: 150px;
+        height: 60px; 
+        border-radius: 15px;
+        color: #FFFFFF;
+        font-weight: 200;
+        display: inline-block; 
+        margin: 0 auto;
+    }
+
+    .cashback-body-1-1, .cashback-body-1-2, .cashback-body-2-1, .cashback-body-2-2{
+        width: 100%; 
+        margin-bottom: 0;
+        border: 1px #4A4A52 dotted;
+    }
+    .cashback-body-1, .cashback-body-2 {
+        width: 100%;
+        flex-direction: column;
+      }
+
+    .cashback-body img{
+        padding-right: 10px;
+    }
+
+    .accumulation-heading h3{
+        width: 70%;
+    }
+}

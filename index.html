@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">FA</div>
+            <nav class="mylinks">
+                <ul>
+                    <a href="#dashboard"><li>Dashboard</li></a>
+                    <a href="#wallet"><li>Wallets</li></a>
+                    <a href="#expenses"><li>Expenses</li></a>
+                    <a href="#documents"><li>Documents</li></a>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="user-profile" style="display: flex; align-items: center;">
+                <i class="material-icons">search</i>
+                <i class="material-icons">notifications</i>
+                <img src="images/profile.png" alt="User Avatar">
+            </div>
+        </header>
+    </div>    
+    <div class="container2">
+        <div class="container2-1">
+            <section class="subheading">
+                <div class="general">
+                    <h2 class="generalheading">General Statistics</h2>
+                </div>
+                <div class="setbutton">
+                    <button class="buttomsetdata">Set Data Sections</button>
+                </div>
+            </section>
+            <section class="statistics">
+                <div class="stat-item">
+                    <p>Monthly Income</p>
+                    <h2>$5367.87</h2>
+                    <span class="red">↓ 10%</span>
+                </div>
+                <div class="stat-item">
+                    <p>Monthly Saving</p>
+                    <h2>$1967.62</h2>
+                    <span class="green">↑ 5%</span>
+                </div>
+                <div class="stat-item">
+                    <p>Monthly Outcome</p>
+                    <h2>$3400.27</h2>
+                    <span class="green">↑ 20%</span>
+                </div>
+            </section>
+
+            <section class="accumulation-cashback">
+                <div class="accumulation">
+                    <div class="accumulation-heading">
+                        <h3>Accumulation</h3>
+                        <a href="#"><p class="accumulationviewall">View All</p></a>
+                    </div>
+                    <div class="accumulation-body">
+                        <div class="circle-chart">
+                            <p>70%</p>
+                        </div>
+                        <div class="circle-chart-info">
+                            <p>Apple iPhone 15 Pro</p>
+                            <p>Required: $1000 | Collected: $700</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cashback">
+                    <div class="accumulation-heading">
+                        <h3>Cashback</h3>
+                        <a href="#"><p class="accumulationviewall">View All</p></a>
+                    </div>
+                    <div class="cashback-body">
+                        <div class="cashback-body-1" style="border-right: #4A4A52 1px dotted;">
+                            <div class="cashback-body-1-1" style="border-bottom: #4A4A52 1px dotted; margin-bottom: 5px;">
+                                <img src="images/store.png" class="cashback-photo"> <span>Store: +5% Discount </span><button class="cashback-button">+</button>
+                            </div>
+                            <div class="cashback-body-1-2">
+                                <img src="images/taxi.png" class="cashback-photo"> <span>+10% Discount</span>  <button class="cashback-button">+</button>
+                            </div>
+                        </div>
+                        <div class="cashback-body-2">
+                            <div class="cashback-body-2-1" style="border-bottom: #4A4A52 1px dotted; margin-bottom: 5px;">
+                                <img src="images/travelling.png" class="cashback-photo"> <span>Travelling: +20% Discount</span> <button class="cashback-button-1 cashback-button">+</button>
+                            </div>
+                            <div class="cashback-body-2-2">
+                            <img src="images/gift.png" class="cashback-photo"> <span>Gifts: +15% Discount</span> <button class="cashback-button-2 cashback-button" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spending-analytics">
+                <img src="images/Spending Analytics.jpg" alt="Spending Analytics" style="width: 100%;">
+            </section>
+        </div>
+        <div class="container2-2">
+            <section class="transactions-creditcard">
+                <div class="creditcard">
+                    <div class="design">
+                        <div class="card-header">
+                            <p class="card-label">Current Card</p>
+                            <p class="card-brand">VISA</p>
+                        </div>
+                        <p class="card-number">**** 6754</p>
+                        <h2 class="card-balance">$5367.87</h2>
+                        <div class="card-footer">
+                            <p class="card-date">10/27</p>
+                            <p class="card-holder">JENNIFER HENRY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="transaction-button">
+                    <button class="sendbutton"><i class="material-icons">send</i> <br><p>Send</p></button>
+                    <button class="transferbutton"><i class="material-icons">compare_arrows</i><br><p>Transfer</p></button>
+                    <button class="morebutton"><i class="material-icons">more_horiz</i><br><p>More</p></button>
+                </div>
+                <div class="transaction">
+                    <h3 style="margin-top: 30px; margin-bottom: 20px;">Transaction</h3>
+                    <ul>
+                        <li class="transaction-item">
+                            <img src="images/Cameron.png" class="profile">
+                            <span style="display: flex;">Cameron Hawkins: <p style="margin-left: 10px; color: green;"> $200</p></span>
+                        </li>
+                        <li class="transaction-item">
+                            <img src="images/netflix.png" class="profile">
+                            <span style="display: flex;">Netflix Subscription: <p style="margin-left: 10px; color: red;">$200</p></span>
+                        </li>
+                        <li class="transaction-item">
+                            <img src="images/Erica.png" class="profile">
+                            <span style="display: flex;">Erica Rosales: <p style="margin-left: 10px; color: red;">$200</p></span>
+                        </li>
+                        <li class="transaction-item">
+                            <img src="images/Aryan.png" class="profile">
+                            <span style="display: flex;">Aryan Armstrong: <p style="margin-left: 10px; color: red;">$200</p></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="javascript/menu.js"></script>
+</body>
+</html>
